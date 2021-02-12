@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" 
+      type="image/png" 
+      href="imgs/favicon.png">
+    <title>Leaf Reader</title> 
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- header -->
+    <div id="header">
+        <img src="imgs/logo.png" id="logo"><br />
+        <h1 id="headerTitle">Leaf Reader</h1>
+    </div>
+
+    <!-- image frame (comic read view) -->
+    <hr id="comicViewDivider">
+    <div id="comicView">
+        <h3 id="comicTitle"></h3>
+        <img async src="" onClick="nextPage()" id="imageFrameMain">
+        <p id="pageNumber"></p>
+    </div>
+
+    <!-- library of comics -->
+    <hr>
+        <div id='libraryHeader'>
+            <h2>Library</h2>
+            <!-- locate library -->
+            <input type="file" webkitdirectory multiple id="locateLibrary" accept="image/*">
+            <label for="locateLibrary" id=locateLibraryLabel>Locate library folder</label>
+        </div>
+
+        <div id="libraryComics">
+            <!-- add comics from the /library folder here via JS -->
+            <!-- Example: <div class="comicElement">
+                    <p class="comicElementTitle">${comicsInLibraryTitles[i]}</p>
+                    <img async src="${comicCovers[i].webkitRelativePath}" class="comicElementCover" onclick="loadComic(this)" id="${comicsInLibraryTitles[i]}">
+                </div>
+            -->
+        </div>
+    <hr>
+
+    <!-- bottom navigation tooltip-->
+    <p id="navigationTip"><small>Left Arrow(A): Previous Page<br />
+        Right Arrow(D): Next Page<br />Up Arrow(W): Scroll Up<br />Down Arrow(S): Scroll Down</small></p>
+
+    <!-- credits-->
+    <a href="https://github.com/elevchyt/leaf-reader" target="_blank" id="credits"><small>Developed by elevchyt</small></a>
+
+    <!-- LOAD JS-->
+    <script type="text/javascript" src="reader.js"></script>
+</body>
+</html>
