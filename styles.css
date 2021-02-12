@@ -170,3 +170,48 @@ input[type="file"] {
     0% { opacity: 0; transform: rotateY(90deg); }
     100%   { opacity: 1; transform: rotateY(0deg); }
 }
+
+
+/* responsive: mobile */
+@media screen and (max-width: 800px) {
+    /* library */
+    #libraryHeader {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+    #libraryHeader > h2 {
+        animation: 0.5s fadeIn ease-out;
+        transition-duration: 0.5s;
+    }
+    #libraryComics {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+        margin: 40px 150px 0px 150px;
+    }
+}
+
+/* responsive: tablet */
+@media screen and (max-width: 1024px) {
+    /* library */
+    #libraryHeader {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+    #libraryHeader > h2 {
+        animation: 0.5s fadeIn ease-out;
+        transition-duration: 0.5s;
+    }
+    #libraryComics {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 25px;
+        margin: 40px 150px 0px 150px;
+    }
+}
