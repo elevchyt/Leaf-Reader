@@ -1,10 +1,9 @@
 /* 
 PALLETE
 Black: #301E29
-White: #F2EDF0
 Dark: #41393E
+White: #F2EDF0
 Green: #76B041
-
 */
 
 /* main body */
@@ -79,10 +78,12 @@ hr {
 
 /* comic covers in the library (classes) */
 .comicElementCover {
-    max-height: 300px;
+    width: 212px;
+    height: 300px;
+    
     border: 1px solid #301E29;
     border-radius: 1%;
-    object-fit: fill;
+    object-fit: cover;
     animation: 1s flipAroundY ease-in-out;
     transition-duration: 0.5s;
 }
