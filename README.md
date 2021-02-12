@@ -7,5 +7,5 @@ Leaf Reader is a handy tool that displays your comics in a gallery and allows yo
 ## Just place your image folders inside the /library directory and then locate that directory and Leaf Reader will take care of the rest.
 
 ![alt text](https://i.imgur.com/J7ICS1F.png)
-![alt text](https://imgur.com/04JzJEn)
-![alt text](https://imgur.com/W4ki16H)
+![alt text](https://i.imgur.com/04JzJEn)
+![alt text](https://i.imgur.com/W4ki16H)
