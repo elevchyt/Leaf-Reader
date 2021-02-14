@@ -7,6 +7,9 @@ Green: #76B041
 */
 
 /* main body */
+html { 
+    scroll-behavior: smooth; 
+}
 body {
     background-color: #41393E;
     color: #F2EDF0;

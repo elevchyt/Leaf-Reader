@@ -122,7 +122,7 @@ function loadComic(comic) {
     document.getElementById('comicView').style.display = 'grid'
     document.getElementById('comicViewDivider').style.display = 'block'
 
-    document.getElementById('comicTitle').scrollIntoView({behavior: "smooth"})
+    window.scrollTo(0, 0)
 }
 
 // Next Page
